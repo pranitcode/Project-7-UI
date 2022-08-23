@@ -5,76 +5,73 @@
     font-family:'Poppins';
 }
  .body {
+   height: 100vh;
+  }
 
-    height: 100vh;
 
-}
-nav {
+
+  /* nav bar */
+  nav {
     display:flex;
+    margin: 0 auto;
+    max-width:1400px;
     align-items: center;
-    justify-content:space-between;   
-    flex-direction:row;
-    padding:10px 0px 10px 50px;
+    padding:10px;
+    flex:1;
+    justify-content:space-between; 
 }
-nav .i-1 {
-height: 40px;
-
-
-}
-
-
-
 
 .nav-items {
      display:flex;
-    /* align-items:center; */
-    justify-content:space-between;   
+     justify-content: space-between;
 }
 
-.nav-item  {
-   padding: 45px;
+ .nav-item  {
    color: #909090;
-
+   margin:0 3rem 0 3rem;
    font-size: 16px;
 }
-
 .active-item, .nav-item:hover {
-
 color: #fe5e35;
-
-
+} 
+.mybar {
+    display: none;
 }
+
+/* nav bar end */
+
 
 
 /* hero */
 
 .intro-section {
   display: flex;
-  justify-content:space-between;
-  flex-direction:row;
-  padding:10px 50px;
+  max-width:1400px;
+  margin:0 auto;
+  align-items: center;
+  justify-content: center; 
 }
 
+/* ................................... */
+/* left section of hero */
 .left-section {
     display: flex;
-    align-items:left;
-    justify-content:space-around;
     flex-direction:column;
+    justify-content: center;
     gap: 1rem;
 }
+
 .left-section h3 {
     display: flex;
     font-size:2.5rem;
     font-weight:400;
     padding-top: 2rem;
     margin-top: 1rem;
-
 }
 
 .left-section img {
     width: 50px;
-    padding:0 0 10px 10px;
-    /* line-height:10px; */
+    padding:0 0 10px 10px;    
 }
 
 .left-section h1 {
@@ -82,51 +79,58 @@ color: #fe5e35;
     font-weight:900;
     font-family: 'Fredoka One', cursive;
     margin-bottom:20px;
-
 }
+.text {
+    padding: 0 23rem 0 0;
+    color:#d6d0c5;
+    }
+
+/* ...................................... */
 
 /* right side */
 
 .right-section {
-
+    
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
-
+    align-items:center;
+    justify-content: center;
 }
 
-.headphone-div{
+.headphone-div {
     display: flex;
     justify-content:center;
     flex-direction:column-reverse;
-    padding-right: 11rem;
+    align-items:center;
     position: relative;
-
 }
 
+.headphone-div img:nth-child(3){
+max-width: 550px;
+margin-top: 3rem;
+}
+   
 
-
-    
+/* for the tag shadow to image drop shadow to discout */
 .tag-wrap {
     filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
   }
+
 
 
 .discount {
     height: 200px;
     position: absolute;
     margin-top:250px;
-    right:650px;
+    right:400px;
     filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
 }
 
 .discount-content {
     position: absolute;
-    margin-top:170px;
-    /* font-family: 'Fredoka One', cursive; */
+    margin-top:17rem;
     font-family: 'Fredoka One', cursive;
-
-
+    
 }
 
 .discount-content h4 {
@@ -134,23 +138,26 @@ color: #fe5e35;
     position: absolute;
     font-size:16px;
     color:white;
-    margin-bottom: 20px;
+    /* top:0; */
+    right: 11rem;
+    bottom: 3rem;
+    /* margin-bottom:44rem; */
 }
 .discount-content h1 {
     font-size:4rem;
     font-weight:900;
     color:white;
     font-family: 'Fredoka One', cursive;
-    /* margin-top: 5rem; */
     position: absolute;
-    /* margin-right:100rem; */
-    /* right: px; */
-    left:-2rem;
-    top:1rem;
+    right:10rem;
+     bottom:-2rem;
 }
 
 
-/*  */
+
+/* discount styling end */
+
+/* ............................... */
 .sub-headline {
     display: flex;
     flex-direction: row;
@@ -160,9 +167,6 @@ color: #fe5e35;
     font-size: 1.5rem;
     font-weight: 300;
 }
-
-
-
 .sub-headline img {
     background:#fe5e35;
     border-radius: 50%;
@@ -174,6 +178,9 @@ color: #fe5e35;
     margin-left: 5rem;
   }
 
+
+/* orange button */
+
 .action-btn {
     background: #fe5e35;
     border: none;
@@ -183,33 +190,28 @@ color: #fe5e35;
     font-size: 18px;
 }
 
+/* this is left side orange btn */
 .action-btns {
     display: flex;
     justify-content:space-between;
-    width:25rem;
-    
+    width:25rem;  
+    margin-top:4rem;  
 }
+
 .btn-bottom {
-    /* padding-left: ; */
-    margin-left:13rem;
-    margin-top: 1rem;
+ margin-top: 1rem;
 }
+/* end about btn */
 
-.text {
-    padding: 0 23rem 0 0;
-    color:#d6d0c5;
-}
 
+
+/* dot btm */
 .dots {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content:center;
-    /* width: 20rem; */
-
     gap: 1rem;
-    padding-left: 16rem;
-
 }
 
 .dot {
@@ -227,3 +229,241 @@ color: #fe5e35;
 .black-dot {
     background: #000;
 }
+/* dot style end */
+
+
+
+
+
+
+
+@media only screen and (max-width:629px) {
+
+    .nav-items {
+        display: none;
+     }
+
+    .mybar {
+        display: flex;
+    }
+    .i-2 {
+        display: none;
+     }
+     
+     .i-1 {
+        width: 70px;
+     }
+   
+     .intro-section {
+        display: flex;
+        flex-direction: column;
+        margin:0 auto;
+        align-items: center;
+        justify-content: center;
+      }
+
+/* left side media list */
+.left-section {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+}
+
+.left-section h3 {
+    display: flex;
+    font-size:1rem;
+    font-weight:400;
+    padding-top: 2rem;
+    margin-top: 1rem;
+}
+
+.left-section img {
+    width: 20px;
+    padding:0 0 10px 10px;    
+}
+
+.left-section h1 {
+    font-size:2rem;
+    font-weight:900;
+    font-family: 'Fredoka One', cursive;
+    margin-bottom:20px;
+}
+.text {
+    padding: 0 10px 0 10px;
+    color:#d6d0c5;
+    }
+
+
+ .action-btn {
+        background: #fe5e35;
+        border: none;
+        padding:.4rem 1rem;
+        border-radius: 23px;
+        color: white;
+        font-size: 13px;
+    }
+    
+    .action-btns {
+        display: flex;
+        justify-content:space-around;
+        width:250px;  
+        margin-top:4rem;  
+        align-items:center;
+    }
+    .sub-headline {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        margin: 10px;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    .sub-headline img {
+        background:#fe5e35;
+        border-radius: 50%;
+        padding: 5px;
+        width: 18px;
+      }
+    
+      .sub-headlines {
+        margin-left: 5rem;
+      }
+
+      /* right side media */
+   
+      .headphone-div img:nth-child(3){
+        max-width: 350px;
+        margin-top: 3rem;
+        }
+
+        .discount {
+            height: 200px;
+            position: absolute;
+            margin-top:250px;
+            right:240px;
+            filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+           width:100px;
+        }
+        
+        .discount-content {
+            position: absolute;
+            margin-top:17rem;
+            font-family: 'Fredoka One', cursive;
+            
+        }
+        
+        .discount-content h4 {
+            font-family: 'Fredoka One', cursive;
+            position: absolute;
+            font-size:8px;
+            color:white;
+            /* top:0; */
+             right: 6rem; 
+            bottom: 2rem;
+        }
+        
+        .discount-content h1 {
+            font-size:2rem;
+            font-weight:900;
+            color:white;
+            font-family: 'Fredoka One', cursive;
+            position: absolute;
+            right:5rem;
+             bottom:-1rem;
+        } 
+        
+        .btn-bottom {
+            margin-top: 1rem;
+            margin-bottom: 1rem; 
+            /* i know  */
+
+           }
+
+ } 
+
+ @media only screen and (min-width: 630px) and   (max-width: 900px) {
+    .nav-items {
+        display: none;
+     }
+
+    .mybar {
+        display: block;
+    }
+    .i-2 {
+        display: none;
+     }
+     
+     .i-1 {
+        width: 70px;
+     }
+   
+     .intro-section {
+        display: flex;
+        flex-direction: column;
+        margin:0 auto;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .left-section {
+        padding:3rem;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .text {
+        padding: 0;
+        color:#d6d0c5;
+        }
+        nav {
+            display:flex;
+            margin: 0 auto;
+            padding:30px;
+            justify-content:space-between; 
+        } 
+ }
+
+ @media only screen and (min-width:899px) and  (max-width: 1330px) {
+    .nav-items {
+        display: flex;
+     }
+
+    .mybar {
+        display: none;
+    }
+    .i-1 {
+        width: 100px;
+    }
+
+
+    .intro-section {
+        display: flex;
+        flex-direction: column;
+        margin:0 auto;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .left-section {
+        padding:3rem;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .text {
+        padding: 0;
+        color:#d6d0c5;
+        }
+ 
+ }
+
+ 
