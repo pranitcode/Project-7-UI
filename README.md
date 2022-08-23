@@ -38,7 +38,7 @@
 
    [![LinkedIn](https://img.shields.io/static/v1.svg?label=connect&message=@pranitingole&color=9cf&logo=linkedin&style=flat&logoColor=white&colorA=blue)](https://www.linkedin.com/in/pranitingole/) 
 
-***Glad to see you here! Show some love by [starring](https://github.com/pranitcode/Shopify-UI-Tailwand) this repo.***
+***Glad to see you here! Show some love by [starring](https://github.com/pranitcode/Project-7-UI) this repo.***
 
 
 ******
